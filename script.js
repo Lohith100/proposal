@@ -5,8 +5,6 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
-
-  //use the below code for making box
   const inputBox = document.createElement("input");
   inputBox.type = "text";
   inputBox.placeholder = "Enter your name";
@@ -18,12 +16,10 @@ yesBtn.addEventListener("click", () => {
       if (inputBox.value) {
         question.innerHTML = "Yay, " + inputBox.value + "! See you soon 😍😍😍!";
         gif.src = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
-        setTimeout(function(){ window.location.href = "https://forms.gle/pJYCn8Mvm3CvhgSC7"; }, 8000);
+        setTimeout(function(){ window.location.href = "https://forms.gle/pJYCn8Mvm3CvhgSC7"; }, 7000);
       }
     }
   });
-
-
 });
 
 noBtn.addEventListener("touchstart", (e) => {
@@ -41,6 +37,3 @@ noBtn.addEventListener("mouseover", () => {
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
-
-
-//copilot   
